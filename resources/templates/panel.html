@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador de agregador bancario</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de agregador bancario</h1>
+
+        <div class="menu">
+            <div class="item">
+                <button onClick="callInitializeDemoData()">
+                    <span class="icons">
+                        <img src="static/img/pi/database.svg" alt="">
+                    </span>
+                    <span>Inicializar datos</span>
+                </button>
+            </div>
+            <div class="item">
+                <button onClick="callCallWebhookForOneTime()">
+                    <span class="icons">
+                        <img class="plus" src="static/img/pi/plus.svg" alt="">
+                        <img src="static/img/pi/coins.svg" alt="">
+                    </span>
+                    <span>Registrar transacción para gasto puntual</span>
+                </button>
+            </div>
+            <div class="item">
+                <button onClick="callCallWebhookForRecurring()">
+                    <span class="icons">
+                        <img class="plus" src="static/img/pi/plus.svg" alt="">
+                        <img class="loop" src="static/img/pi/loop.svg" alt="">
+                    </span>
+                    <span>Registrar transacción para gasto recurrente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/simulator.js"></script>
+</body>
+</html>
