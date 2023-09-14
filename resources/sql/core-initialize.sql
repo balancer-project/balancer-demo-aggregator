@@ -5,6 +5,7 @@ TRUNCATE TABLE recurring_expense;
 TRUNCATE TABLE expense_recipient;
 
 INSERT INTO expense_recipient (id,"name") VALUES
+	 ('a03b3b1c-06cd-4b1f-99fc-cb619da44378','Destinatario desconocido'),
 	 ('3fa85f64-5717-4562-b3fc-2c963f66afa6','Ana Pérez Martínez'),
 	 ('94ba6d13-6b63-40cc-ae05-8025457277cd','Renfe'),
 	 ('103b184f-0da5-4f5e-94b7-c7970c8cd2e4','Movistar'),
